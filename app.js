@@ -120,11 +120,15 @@ displayCard()
 // ***** BUTTONS *****
 // *******************
 const subtractFromCardCount = () => {
-  currentCardCount--
+  if (currentCardCount > 0) {
+    currentCardCount--
+  }
 }
 
 const addToCardCount = () => {
-  currentCardCount++
+  if (currentCardCount < 14) {
+    currentCardCount++
+  }
 }
 
 leftBtn.addEventListener('click', () => {
