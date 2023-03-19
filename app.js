@@ -1,4 +1,4 @@
-// TODO:
+// TODO: conditionals if cardCount goes below 0 or above 14, don't let it run.
 // Variables
 const cardContainer = document.querySelector('.card-container')
 const cardWord = document.querySelector('.card-word')
@@ -20,7 +20,6 @@ class Card {
   }
 }
 
-// dog, car, cow, banana, apple, table, window, clock, ball, book, train, plane, ear, nose, mouth
 const card_dog = new Card('Dog', 'imgs/img-001_dog.avif', 'image of dog', 1)
 const card_car = new Card('Car', 'imgs/img-002_car.avif', 'image of car', 2)
 const card_cow = new Card('Cow', 'imgs/img-003_cow.jpg', 'image of cow', 3)
@@ -86,7 +85,7 @@ const card_mouth = new Card(
   'image of mouth',
   15
 )
-
+// *******************
 // All Cards Array
 const cardStack = [
   card_dog,
@@ -105,9 +104,9 @@ const cardStack = [
   card_nose,
   card_mouth,
 ]
-
+// *******************
 // Card Display
-
+// *******************
 let currentCardCount = 0
 const displayCard = (stackIndex) => {
   stackIndex = currentCardCount
@@ -118,6 +117,9 @@ const displayCard = (stackIndex) => {
 }
 displayCard()
 
+// *******************
+// ***** BUTTONS *****
+// *******************
 const subtractFromCardCount = () => {
   currentCardCount--
 }
@@ -125,10 +127,6 @@ const subtractFromCardCount = () => {
 const addToCardCount = () => {
   currentCardCount++
 }
-
-// *******************
-// ***** BUTTONS *****
-// *******************
 
 leftBtn.addEventListener('click', () => {
   subtractFromCardCount()
