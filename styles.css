@@ -1,13 +1,145 @@
+/* color palette (color-blind friendly)
+blue: #0077BB / 0,119,187 
+cyan: #33BBEE / 51, 187, 238
+teal: #009988 / 0, 153, 136
+orange: #EE7733 / 238, 119, 51
+red: #CC3311 / 204, 51, 17
+magenta: #EE3377 / 238, 51, 119
+grey: #BBBBBB / 187, 187, 187
+ingido: #332288 / 51, 34, 136 
+ */
+.skip-link {
+  left: -100%;
+  position: absolute;
+}
+
+.skip-link:focus {
+  left: 50%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 html,
 body {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
+/* ************************************************ */
+/* NAVIGATION */
+/* ************************************************ */
+.topnav {
+  background-color: #332288;
+  padding: 0 5%;
+}
+
+.menu li {
+  padding: 5%;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  padding: 2.5% 5% 2.5% 0;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 5% 2.5%;
+}
+
+.toggle {
+  order: 1;
+  font-size: 1.5rem;
+}
+
+.topnav-link {
+  /* padding: 2.5%; */
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .topnav-link {
+  display: block;
+}
+
+.topnav-link a {
+  color: white;
+  text-decoration: none;
+}
+.fa-bars {
+  color: white;
+}
+/* .hidden {
+  display: none;
+} */
+
+/* ************************************************ */
+/* Body */
+/* ************************************************ */
 .body-container {
   box-sizing: border-box;
   margin: 0;
 }
+.main {
+  display: flex;
+}
+
+.main-title {
+  color: #009988;
+  /* background-color: #332288; */
+  padding: 10%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.start-container {
+  display: flex;
+  justify-content: center;
+}
+.start-link {
+  /* grid-area: ; */
+  font-size: 36px;
+  border-style: solid;
+  border-color: #332288;
+  background-color: #009988;
+  color: #ffffff;
+  border-radius: 5%;
+  text-decoration: none;
+  padding: 2.5%;
+}
 .card-img {
   width: 100%;
+}
+
+/* ************************************************** */
+/* ************** Tablet media query *************** */
+/* ************************************************** */
+@media screen and (min-width: 481px) {
+  /* NAVIGATION */
+}
+/* ************************************************** */
+/* ************** Desktop media query *************** */
+/* ************************************************** */
+
+@media screen and (min-width: 769px) {
+  /* NAVIGATION */
+  .fa-bars:hover {
+    color: #ee3377;
+  }
 }

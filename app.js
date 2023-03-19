@@ -7,7 +7,6 @@ const cardImgContainer = document.querySelector('.card-img-container')
 const cardImage = document.querySelector('.card-img')
 const leftBtn = document.querySelector('#left-btn')
 const rightBtn = document.querySelector('#right-btn')
-let currentArrayCount = 0
 
 // **************************
 // Card Class Constructor & Objects

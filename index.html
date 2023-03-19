@@ -5,30 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>First Words | Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>First Words | Home</title>
   </head>
   <body class="body-container">
     <header>
-      <!-- TODO: add skip link -->
+      <!-- skip link -->
+      <a class="skip-link" href="#main">Skip to main</a>
+      <!--Mobile Navbar-->
       <nav class="topnav">
-        <!-- TODO Hamburger Navbar for Mobile-->
-        <ul class="topnav-links">
-          <li class="topnav-link active"><a href="./index.html">Home</a></li>
+        <ul class="menu">
+          <li class="logo">First Words</li>
+          <li class="topnav-link"><a href="./index.html">Home</a></li>
           <li class="topnav-link"><a href="./about.html">About</a></li>
+          <li class="topnav-link"><a href="./cards.html">Cards</a></li>
+          <li class="toggle">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Title -->
-      <h1>First Words</h1>
+      <h1 class="main-title">First Words</h1>
       <!-- Start Btn -->
       <div class="start-container">
-        <a href="./cards.html">Start!</a>
+        <a href="./cards.html" class="start-link">Start!</a>
       </div>
     </main>
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <p class="copyright-footer">© David Wyman</p>
+    </footer>
 
-    <script src="./app.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>
