@@ -103,9 +103,9 @@ body {
   color: #009988;
   /* background-color: #332288; */
   padding: 10%;
-
   display: flex;
   justify-content: center;
+  /* position: absolute; */
 }
 
 .start-container {
@@ -116,8 +116,7 @@ body {
   /* grid-area: ; */
   font-size: 36px;
   border-style: solid;
-  border-color: #332288;
-  background-color: #009988;
+  background-color: #332288;
   color: #ffffff;
   border-radius: 5%;
   text-decoration: none;
@@ -130,8 +129,24 @@ body {
 /* ************************************************** */
 /* ************** Tablet media query *************** */
 /* ************************************************** */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 2rem;
+  }
   /* NAVIGATION */
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+    font-size: 2rem;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 1;
+    font-size: 2.5rem;
+  }
 }
 /* ************************************************** */
 /* ************** Desktop media query *************** */
@@ -139,7 +154,29 @@ body {
 
 @media screen and (min-width: 769px) {
   /* NAVIGATION */
-  .fa-bars:hover {
-    color: #ee3377;
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .logo {
+    order: 0;
+  }
+  .topnav-link {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .topnav-link a:hover {
+    color: #009988;
+  }
+  .toggle {
+    display: none;
+  }
+
+  /* Main */
+  .start-container a:hover {
+    background-color: #009988;
+    border-color: #332288;
   }
 }
