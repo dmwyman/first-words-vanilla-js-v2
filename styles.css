@@ -27,7 +27,26 @@ html,
 body {
   font-size: 1rem;
   line-height: 1.5rem;
+  box-sizing: border-box;
+  margin: 0;
 }
+
+/* ************************************************ */
+/* Grids */
+/* ************************************************ */
+
+/* Home Grid */
+/* .home-body-container {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    'head head head'
+    'main main main'
+    'foot foot foot';
+} */
+/* Cards Grid */
+
+/* About Grid */
 
 /* ************************************************ */
 /* NAVIGATION */
@@ -91,10 +110,7 @@ body {
 /* ************************************************ */
 /* Body */
 /* ************************************************ */
-.body-container {
-  box-sizing: border-box;
-  margin: 0;
-}
+
 .main {
   display: flex;
 }
@@ -165,10 +181,12 @@ body {
 .about-main {
   color: white;
   background-color: #009988;
-  font-size: 1.5rem;
 }
 .about-section-heading {
   color: #332288;
+}
+.about-section p {
+  font-size: 1.25rem;
 }
 
 /* ************************************************ */
