@@ -125,6 +125,61 @@ body {
 .card-img {
   width: 100%;
 }
+/* ************************************************ */
+/* Cards Page */
+/* ************************************************ */
+.text-container {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.card-word {
+  color: #009988;
+  justify-self: center;
+  padding-top: 5%;
+}
+
+.card-position {
+  color: #ee3377;
+  justify-self: right;
+  padding-top: 2.5%;
+  padding-right: 5%;
+  font-size: 1.5rem;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #009988; */
+}
+
+.btns-container button {
+  background-color: #332288;
+  color: #ffffff;
+}
+
+/* ************************************************ */
+/* About Main*/
+/* ************************************************ */
+
+.about-main {
+  color: white;
+  background-color: #009988;
+  font-size: 1.5rem;
+}
+.about-section-heading {
+  color: #332288;
+}
+
+/* ************************************************ */
+/* Footer */
+/* ************************************************ */
+
+/* footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+} */
 
 /* ************************************************** */
 /* ************** Tablet media query *************** */

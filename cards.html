@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>First Words | Cards</title>
   </head>
   <body class="body-container">
@@ -26,18 +30,26 @@
     </header>
     <!-- Card -->
     <div class="card-container">
-      <h1 class="card-word"></h1>
-      <p class="card-position"></p>
+      <div class="text-container">
+        <h1 class="card-word"></h1>
+        <p class="card-position"></p>
+      </div>
       <div class="card-img-container">
         <img class="card-img" src="" alt="" />
       </div>
     </div>
     <!-- Buttons -->
     <div class="btns-container">
-      <button id="left-btn">Back!</button>
-      <button id="right-btn">Next!</button>
+      <button id="left-btn">
+        <i class="fa-solid fa-circle-arrow-left"></i> Back!
+      </button>
+
+      <button id="right-btn">
+        Next! <i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
     </div>
     <!-- Footer -->
     <script src="./app.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>
