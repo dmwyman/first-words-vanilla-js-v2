@@ -1,3 +1,6 @@
+/* TODO: footer stick to bottom on cards and about */
+/* TODO: card images all same size */
+
 /* color palette (color-blind friendly)
 blue: #0077BB / 0,119,187 
 cyan: #33BBEE / 51, 187, 238
@@ -29,92 +32,23 @@ body {
   line-height: 1.5rem;
   box-sizing: border-box;
   margin: 0;
-}
-
-/* ************************************************ */
-/* Grids */
-/* ************************************************ */
-
-/* Home Grid */
-.home-body-container {
-  display: grid;
-  /* width: 100%; */
-  min-height: 100vh;
-  grid-template-areas:
-    'head'
-    'main'
-    'foot';
-}
-
-.home-header {
-  grid-area: head;
-}
-
-.home-main {
-  grid-area: main;
-  padding: 2.5rem;
-}
-
-footer {
-  grid-area: foot;
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  height: 2.5rem;
-  color: #ffffff;
-  background-color: #332288;
-  padding: 0.5rem;
+  height: 100%;
 }
-
-/* Cards Grid */
-/* .cards-body-container {
-  display: grid;
-  min-height: 100vh;
-  grid-template-areas:
-    'head'
-    'body'
-    'foot';
+/* body {
+  position: relative;
 } */
-
-/* .cards-header {
-  grid-area: head;
-}
-
-.cards-main {
-  grid-area: main;
+/* footer {
+  position: abosolute;
 } */
-
-/* .cards-footer {
-  grid-area: foot;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 2.5rem;
-  color: #ffffff;
-  background-color: #332288;
-  padding: 0.5rem;
-} */
-
-/* About Grid */
-.about-body-container {
-  display: grid;
+/* ************************************************ */
+/* Grid */
+/* ************************************************ */
+.body-container {
   min-height: 100%;
-  grid-template-areas:
-    'head'
-    'main'
-    'foot';
-}
-
-.about-header {
-  grid-area: head;
-}
-
-.about-main {
-  grid-area: main;
-}
-
-.about-footer {
-  grid-area: foot;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 /* ************************************************ */
@@ -180,9 +114,9 @@ footer {
 /* Body */
 /* ************************************************ */
 
-.main {
+/* .home-main {
   display: flex;
-}
+} */
 
 .main-title {
   color: #009988;
@@ -207,9 +141,7 @@ footer {
   text-decoration: none;
   padding: 2.5%;
 }
-.card-img {
-  width: 100%;
-}
+
 /* ************************************************ */
 /* Cards Page */
 /* ************************************************ */
@@ -222,6 +154,15 @@ footer {
   color: #009988;
   justify-self: center;
   padding-top: 5%;
+}
+
+.card-img-container {
+  display: flex;
+  justify-content: center;
+}
+.card-img {
+  height: 50vh;
+  max-width: 95%;
 }
 
 .card-position {
@@ -243,6 +184,7 @@ footer {
   color: #ffffff;
   padding: 1rem;
   font-size: 1.5rem;
+  margin: 1rem;
 }
 
 /* ************************************************ */
@@ -276,11 +218,12 @@ footer {
 /* Footer */
 /* ************************************************ */
 
-/* footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-} */
+.footer {
+  color: #ffffff;
+  background-color: #332288;
+  height: 2rem;
+  padding-top: 0.5rem;
+}
 
 /* ************************************************** */
 /* ************** Tablet media query *************** */
