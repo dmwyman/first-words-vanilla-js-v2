@@ -36,17 +36,86 @@ body {
 /* ************************************************ */
 
 /* Home Grid */
-/* .home-body-container {
+.home-body-container {
   display: grid;
-  width: 100%;
+  /* width: 100%; */
+  min-height: 100vh;
   grid-template-areas:
-    'head head head'
-    'main main main'
-    'foot foot foot';
-} */
+    'head'
+    'main'
+    'foot';
+}
+
+.home-header {
+  grid-area: head;
+}
+
+.home-main {
+  grid-area: main;
+  padding: 2.5rem;
+}
+
+footer {
+  grid-area: foot;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 2.5rem;
+  color: #ffffff;
+  background-color: #332288;
+  padding: 0.5rem;
+}
+
 /* Cards Grid */
+/* .cards-body-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    'head'
+    'body'
+    'foot';
+} */
+
+/* .cards-header {
+  grid-area: head;
+}
+
+.cards-main {
+  grid-area: main;
+} */
+
+/* .cards-footer {
+  grid-area: foot;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 2.5rem;
+  color: #ffffff;
+  background-color: #332288;
+  padding: 0.5rem;
+} */
 
 /* About Grid */
+.about-body-container {
+  display: grid;
+  min-height: 100%;
+  grid-template-areas:
+    'head'
+    'main'
+    'foot';
+}
+
+.about-header {
+  grid-area: head;
+}
+
+.about-main {
+  grid-area: main;
+}
+
+.about-footer {
+  grid-area: foot;
+}
 
 /* ************************************************ */
 /* NAVIGATION */
@@ -172,6 +241,8 @@ body {
 .btns-container button {
   background-color: #332288;
   color: #ffffff;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 /* ************************************************ */
@@ -179,14 +250,26 @@ body {
 /* ************************************************ */
 
 .about-main {
-  color: white;
-  background-color: #009988;
+  color: #332288;
+  /* background-color: #009988; */
+  padding: 1rem;
+}
+.about-section {
+  padding-top: 2rem;
+  /* padding-bottom:  */
 }
 .about-section-heading {
-  color: #332288;
+  color: #009988;
+  padding-bottom: 0.5rem;
 }
 .about-section p {
   font-size: 1.25rem;
+}
+
+.about-p-contact-span {
+  font-weight: bold;
+  font-size: large;
+  color: #009988;
 }
 
 /* ************************************************ */
@@ -207,6 +290,9 @@ body {
     font-size: 2rem;
   }
   /* NAVIGATION */
+  .topnav {
+    margin-bottom: 2rem;
+  }
   .menu {
     justify-content: center;
   }
@@ -219,6 +305,14 @@ body {
     text-align: right;
     order: 1;
     font-size: 2.5rem;
+  }
+  /* About Page */
+  .about title {
+    padding-bottom: 2rem;
+  }
+  .about-section-heading {
+    color: #009988;
+    padding-bottom: 1.5rem;
   }
 }
 /* ************************************************** */
