@@ -289,4 +289,11 @@ body {
     background-color: #009988;
     border-color: #332288;
   }
+  .btns-container button {
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  .btns-container button:hover {
+    opacity: 1;
+  }
 }
