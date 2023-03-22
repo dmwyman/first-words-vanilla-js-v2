@@ -1,4 +1,3 @@
-// TODO: conditionals if cardCount goes below 0 or above 14, don't let it run.
 // Variables
 const cardContainer = document.querySelector('.card-container')
 const cardWord = document.querySelector('.card-word')
@@ -34,6 +33,7 @@ const card_plane = new Card('Plane', 'imgs/img-012_plane.avif', 'airplane', 12)
 const card_ear = new Card('Ear', 'imgs/img-013_ear.avif', 'image of ear', 13)
 const card_nose = new Card('Nose', 'imgs/img-014_nose.avif', 'nose', 14)
 const card_mouth = new Card('Mouth', 'imgs/img-015_mouth.avif', 'mouth', 15)
+
 // *******************
 // All Cards Array
 const cardStack = [

@@ -1,16 +1,4 @@
-/* TODO: footer stick to bottom on cards and about */
-/* TODO: card images all same size */
-
-/* color palette (color-blind friendly)
-blue: #0077BB / 0,119,187 
-cyan: #33BBEE / 51, 187, 238
-teal: #009988 / 0, 153, 136
-orange: #EE7733 / 238, 119, 51
-red: #CC3311 / 204, 51, 17
-magenta: #EE3377 / 238, 51, 119
-grey: #BBBBBB / 187, 187, 187
-ingido: #332288 / 51, 34, 136 
- */
+/* Global */
 .skip-link {
   left: -100%;
   position: absolute;
@@ -35,12 +23,7 @@ body {
   width: 100%;
   height: 100%;
 }
-/* body {
-  position: relative;
-} */
-/* footer {
-  position: abosolute;
-} */
+
 /* ************************************************ */
 /* Grid */
 /* ************************************************ */
@@ -88,7 +71,6 @@ body {
 }
 
 .topnav-link {
-  /* padding: 2.5%; */
   order: 2;
   width: 100%;
   text-align: center;
@@ -106,25 +88,16 @@ body {
 .fa-bars {
   color: white;
 }
-/* .hidden {
-  display: none;
-} */
 
 /* ************************************************ */
 /* Body */
 /* ************************************************ */
 
-/* .home-main {
-  display: flex;
-} */
-
 .main-title {
   color: #009988;
-  /* background-color: #332288; */
   padding: 10%;
   display: flex;
   justify-content: center;
-  /* position: absolute; */
 }
 
 .start-container {
@@ -132,7 +105,6 @@ body {
   justify-content: center;
 }
 .start-link {
-  /* grid-area: ; */
   font-size: 36px;
   border-style: solid;
   background-color: #332288;
@@ -176,7 +148,6 @@ body {
 .btns-container {
   display: flex;
   justify-content: space-evenly;
-  /* background-color: #009988; */
 }
 
 .btns-container button {
@@ -193,12 +164,10 @@ body {
 
 .about-main {
   color: #332288;
-  /* background-color: #009988; */
   padding: 1rem;
 }
 .about-section {
   padding-top: 2rem;
-  /* padding-bottom:  */
 }
 .about-section-heading {
   color: #009988;
@@ -232,7 +201,7 @@ body {
   body {
     font-size: 2rem;
   }
-  /* NAVIGATION */
+  /* Navigation */
   .topnav {
     margin-bottom: 2rem;
   }
@@ -249,6 +218,12 @@ body {
     order: 1;
     font-size: 2.5rem;
   }
+
+  /* Cards */
+  .card-btn {
+    border-radius: 5%;
+  }
+
   /* About Page */
   .about title {
     padding-bottom: 2rem;
@@ -256,6 +231,11 @@ body {
   .about-section-heading {
     color: #009988;
     padding-bottom: 1.5rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding-bottom: 2rem;
   }
 }
 /* ************************************************** */

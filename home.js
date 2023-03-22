@@ -1,4 +1,3 @@
-// const menuBars = document.querySelector('.fa-bars')
 const toggle = document.querySelector('.toggle')
 const menu = document.querySelector('.menu')
 // **************************

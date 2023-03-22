@@ -2,13 +2,15 @@
 
 ## Purpose
 
-Learn English words paired with images.
+Learn English words through direct experience with words paired with images.
 
 ## How to Use First Words
 
-Click the "Start" button on the landing page to navigate to the first card.
+Click the "Start" button on the home page to navigate to the first card. Or click the "Cards" link on the top navigation.
 
 Then Click the left or right button to navigate to a different word-image pair.
+
+For more information about the website and its creator, navigate to the About page.
 
 ## Features
 
