@@ -183,6 +183,14 @@ body {
   color: #009988;
 }
 
+.about-aside-heading {
+  color: #ee3377;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.about-aside-list {
+  font-size: 1rem;
+}
 /* ************************************************ */
 /* Footer */
 /* ************************************************ */
@@ -230,6 +238,36 @@ body {
   }
   .about-section-heading {
     color: #009988;
+    padding-bottom: 1.5rem;
+  }
+  /* About - Main - Grid */
+
+  .info-wrapper {
+    display: grid;
+    grid-template-areas:
+      'sec1 sec1 sec1'
+      'sec2 sec2 aside'
+      'sec3 sec3 sec3';
+  }
+
+  #about-section-1 {
+    grid-area: sec1;
+  }
+  #about-section-2 {
+    grid-area: sec2;
+  }
+
+  #about-section-3 {
+    grid-area: sec3;
+  }
+
+  .about-aside {
+    grid-area: aside;
+    padding-left: 2rem;
+  }
+
+  .about-aside-heading {
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
   }
 

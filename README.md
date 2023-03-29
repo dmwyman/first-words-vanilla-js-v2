@@ -12,7 +12,9 @@ Then Click the left or right button to navigate to a different word-image pair.
 
 For more information about the website and its creator, navigate to the About page.
 
-## Features
+## Requirements and Features
+
+Media query for tablet and higher changes the format of the About page using CSS Grid. Media query for Desktop and above changes the Navigation Menu from a hamburger/dropdown to a full menu.
 
 Accessibility features includes semantic html, colorblind friendly colors, a skip link at the top of the html, and alt text for all images.
 
